@@ -1,7 +1,7 @@
 {
   "name": "article-application",
   "version": "1.0.0",
-  "description": "NodeJS Article Application",
+  "description": "NodeJS InstaFeedApplication Application",
   "main": "index.js",
   "engines": {
     "node": "14.x"
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uday510/ArticleApplication.git"
+    "url": "git+https://github.com/uday510/InstaFeedApplication.git"
   },
   "author": "Bandi Uday Teja",
   "license": "GNU GENERAL PUBLIC LICENSE",
   "bugs": {
-    "url": "https://github.com/uday510/ArticleApplication/issues"
+    "url": "https://github.com/uday510/InstaFeedApplication/issues"
   },
-  "homepage": "https://github.com/uday510/ArticleApplication#readme",
+  "homepage": "https://github.com/uday510/InstaFeedApplication#readme",
   "dependencies": {
     "@apollo/server": "^4.7.4",
     "apollo-server": "^3.12.0",
