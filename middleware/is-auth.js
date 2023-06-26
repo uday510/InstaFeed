@@ -4,7 +4,7 @@ module.exports = (req, res, next) => {
   const authHeader = req.get("Authorization");
   if (!authHeader) {
     req.isAuth = false;
-    next();
+    return next();
   }
   const token = authHeader.split(" ")[1]; // Authorization: Bearer "wryheyhehye"
 
@@ -15,7 +15,7 @@ module.exports = (req, res, next) => {
   let decodedToken;
   try {
     decodedToken = jwt.verify(token, "securedPrivateKey");
-  } catch (error) {
+  } catch (err) {
     req.isAuth = false;
     console.log(err);
     return next();

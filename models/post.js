@@ -8,14 +8,30 @@ const postSchema = new Schema(
       ref: "User",
       required: true,
     },
+    likes: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
+    dislikes: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
     caption: {
       type: String,
-      required: true,
     },
-    imageUrl: {
+    comment: {
       type: String,
-      required: true,
     },
+    imageUrl: [
+      {
+        type: String,
+        required: true,
+      },
+    ],
   },
   { timestamps: true }
 );
